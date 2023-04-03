@@ -2,10 +2,11 @@
   	box-sizing: border-box;
   	font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
   	font-size: 16px;
-  	
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
 }
 body {
-  	background-color: #2f3947;
+  	background-color: #435165;
 }
 .login {
   	width: 400px;
@@ -51,7 +52,7 @@ body {
   	cursor: pointer;
   	font-weight: bold;
   	color: #ffffff;
-  	
+  	transition: background-color 0.2s;
 }
 .login form input[type="submit"]:hover {
 	background-color: #2868c7;

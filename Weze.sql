@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Czas generowania: 03 Kwi 2023, 19:58
+-- Czas generowania: 03 Kwi 2023, 22:39
 -- Wersja serwera: 10.4.21-MariaDB
 -- Wersja PHP: 7.4.26
 
@@ -42,16 +42,16 @@ CREATE TABLE `Leaderboard` (
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `name` varchar(20) COLLATE utf8_bin NOT NULL,
-  `pass` varchar(20) COLLATE utf8_bin NOT NULL,
-  `email` varchar(20) COLLATE utf8_bin NOT NULL
+  `pass` varchar(200) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Zrzut danych tabeli `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `pass`, `email`) VALUES
-(1, 'Szymon', '1234', '');
+INSERT INTO `users` (`id`, `name`, `pass`) VALUES
+(5, 'Testowy', 'b59c67bf196a4758191e42f76670ceba'),
+(9, 'Szymon', '9bcc7dfc1c711d884f50e051589db559');
 
 --
 -- Indeksy dla zrzutów tabel
@@ -85,7 +85,7 @@ ALTER TABLE `Leaderboard`
 -- AUTO_INCREMENT dla tabeli `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
