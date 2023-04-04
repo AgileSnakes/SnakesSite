@@ -42,11 +42,11 @@
 				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Wyloguj</a>
 			</div>
 		</nav>
-		<form action="play_game.php" method="post">
+		
 			<?php
 				 while($row = $result->fetch_assoc()) {
 				 	
-				 	
+				 	echo'<form action="play_game.php" method="post">';
 				 	echo'<div class="card" style="width: 18rem;">';
   					echo'<img src='.$row["png_link"].' class="card-img-top" alt="...">';
  					echo'<div class="card-body">';
@@ -56,13 +56,14 @@
   					echo'<input type="submit" class="btn btn-primary" value="Zagraj">';
   					echo'</div>';
 					echo'</div>';
+					echo'</form>';
 					
 					
 				 }
 
 			?>
 	
-		</form>
+		
 	</body>
 
 </html>
