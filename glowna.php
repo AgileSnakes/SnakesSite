@@ -3,6 +3,10 @@
 	{
 		header("Location: index.html");
 	}
+		include('conn.php');
+		$sql = "SELECT game_name, game_link FROM Games";
+		$result = $conn->query($sql);
+
  ?>
 <!DOCTYPE html>
 <html>
@@ -21,7 +25,14 @@
 			</div>
 		</nav>
 		<div id="gra">
-		<iframe src="build/index.html" width="1000px" height="645px"></iframe>
+			<?php
+				 while($row = $result->fetch_assoc()) {
+				 	echo'<iframe src='.$row["game_link"].' width="1000px" height="645px"></iframe>';
+				 }
+
+			?>
+	
+	
 	</div>
 	</body>
 </html>
