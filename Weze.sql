@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Czas generowania: 04 Kwi 2023, 12:40
+-- Czas generowania: 04 Kwi 2023, 17:27
 -- Wersja serwera: 10.4.21-MariaDB
 -- Wersja PHP: 7.4.26
 
@@ -30,16 +30,18 @@ SET time_zone = "+00:00";
 CREATE TABLE `Games` (
   `id_games` int(11) NOT NULL,
   `game_name` varchar(200) COLLATE utf8_bin NOT NULL,
-  `game_link` varchar(200) COLLATE utf8_bin NOT NULL
+  `game_link` varchar(200) COLLATE utf8_bin NOT NULL,
+  `png_link` varchar(200) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Zrzut danych tabeli `Games`
 --
 
-INSERT INTO `Games` (`id_games`, `game_name`, `game_link`) VALUES
-(1, 'Roll a ball', 'build/index.html'),
-(2, 'Angry Birds', 'AngryBirds/AngryBirds/index.html');
+INSERT INTO `Games` (`id_games`, `game_name`, `game_link`, `png_link`) VALUES
+(1, 'Roll a ball', 'build/index.html', 'Img/Roll.png'),
+(2, 'Angry Birds', 'AngryBirds/AngryBirds/index.html', 'Img/Angry.png'),
+(6, '2D Platformer', '2DPlatformer/index.html', 'Img/2D.png');
 
 -- --------------------------------------------------------
 
@@ -62,17 +64,17 @@ CREATE TABLE `Leaderboard` (
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `name` varchar(20) COLLATE utf8_bin NOT NULL,
-  `pass` varchar(200) COLLATE utf8_bin NOT NULL
+  `pass` varchar(200) COLLATE utf8_bin NOT NULL,
+  `admin` int(2) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Zrzut danych tabeli `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `pass`) VALUES
-(5, 'Testowy', 'b59c67bf196a4758191e42f76670ceba'),
-(9, 'Szymon', '9bcc7dfc1c711d884f50e051589db559'),
-(10, 'Admin', '81dc9bdb52d04dc20036dbd8313ed055');
+INSERT INTO `users` (`id`, `name`, `pass`, `admin`) VALUES
+(10, 'Admin', '81dc9bdb52d04dc20036dbd8313ed055', 1),
+(11, 'Szymon', '81dc9bdb52d04dc20036dbd8313ed055', NULL);
 
 --
 -- Indeksy dla zrzutów tabel
@@ -106,7 +108,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT dla tabeli `Games`
 --
 ALTER TABLE `Games`
-  MODIFY `id_games` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_games` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT dla tabeli `Leaderboard`
@@ -118,7 +120,7 @@ ALTER TABLE `Leaderboard`
 -- AUTO_INCREMENT dla tabeli `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

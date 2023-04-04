@@ -8,7 +8,7 @@ $password= $_POST["password"];
 $password = md5($password);
 
 //zapytanie sql - oby działało bo się wkurwię i to wypierdole 
-$sql = "SELECT  name, pass FROM users WHERE name = '".$username."'";
+$sql = "SELECT  name, pass, admin FROM users WHERE name = '".$username."'";
 
 $result = $conn->query($sql);
 
@@ -18,6 +18,7 @@ if ($result->num_rows > 0) {
   	if($row["pass"] == $password){
   		//echo "Udało się zalogować";
       setcookie("User",$row["name"]);
+      setcookie("Admin",$row["admin"]);
       header("Location: glowna.php");
   	}else{
   		echo "Błędne dane";
