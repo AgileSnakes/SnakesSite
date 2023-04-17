@@ -1,8 +1,15 @@
+<?php
+	include('conn.php');
+
+	$sql = "SELECT  game_name, game_link FROM Games";
+	$result = $conn->query($sql);
+?>
+
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 	<head>
 		<meta charset="utf-8">
-		<title>Strona g≈Ç√≥wna</title>
+		<title>Strona g≥Ûwna</title>
 		<link href="glownacss.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
@@ -13,25 +20,17 @@
 	<body class="loggedin">
 		<nav class="navtop">
 			<div>
-				
-				<h1>Dodaj grƒô</h1>
-				<a href="glowna.php"><i class="fas fa-file"></i>Strona g≈Ç√≥wna</a>
+				<?php
+					echo'<h1>'."Ranking".'</h1>';
+				?>
+				<a href="glowna.php"><i class="fas fa-file"></i>Strona g≥Ûwna</a>
 				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Wyloguj</a>
 			</div>
 		</nav>
-		
-			
-			<form action="AddG.php" method="post">
-				
-				<input type="text" name="gamelink" placeholder="Link do gry" id="gamelink" required>
-				<input type="text" name="pnglink" placeholder="Link do grafiki" id="pnglink" required>
-				<input type="text" name="addGameName" placeholder="Nazwa gry" id="addGameName" required>
-				<input type="submit" value="Dodaj">
-				
-				
-			</form>
-	
-
+		<?php
+			while($row = $result->fetch_assoc()) {
+				//echo '<iframe src='.$row["game_link"].' width=960px height=640px></iframe>';
+			}
+		?>
 	</body>
-
 </html>

@@ -7,8 +7,6 @@
 
 		 setcookie('AddUsers','');
 	}
-
-
  ?>
 
 <!DOCTYPE html>
