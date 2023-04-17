@@ -3,22 +3,23 @@
 	{
 		header("Location: index.php");
 	}
-		include('conn.php');
-		$sql = "SELECT game_name, game_link, png_link FROM Games";
-		$result = $conn->query($sql);
+
+	include('conn.php');
+	$sql = "SELECT game_name, game_link, png_link FROM Games";
+	$result = $conn->query($sql);
 
 	if(isset($_COOKIE['AddGame']))
 	{
-		 echo '<script type ="text/JavaScript">';  
-		 echo 'alert("Gra dodana")';  
-		 echo '</script>'; 
+		echo '<script type ="text/JavaScript">';  
+		echo 'alert("Gra dodana")';  
+		echo '</script>'; 
 
-		 setcookie('AddGame','');
+		setcookie('AddGame','');
 	}
 
  ?>
 <!DOCTYPE html>
-<html>
+<html lang=pl>
 	<head>
 		<meta charset="utf-8">
 		<title>Strona główna</title>
@@ -35,9 +36,10 @@
 				<?php
 				echo'<h1>Strona główna - Cześć '.$_COOKIE["User"].'</h1>';
 				if(isset($_COOKIE['Admin'])){
-				echo'<a href="addGames.php"><i class="fas fa-plus"></i>Dodaj grę </a>';
+					echo'<a href="addGames.php"><i class="fas fa-plus"></i>Dodaj grę </a>';
 				}
 				?>
+				<a href="leaderboard.php"><i class="fas fa-file"></i>Ranking</a>
 				<a href=""><i class="fas fa-user-circle"></i>Profil</a>
 				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Wyloguj</a>
 			</div>

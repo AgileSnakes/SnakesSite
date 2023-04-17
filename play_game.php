@@ -1,15 +1,9 @@
 <?php
-
 	$gameName = $_POST['gamename'];
 	include('conn.php');
 
-
 	$sql = "SELECT  game_name, game_link FROM Games WHERE game_name = '".$gameName."'";
 	$result = $conn->query($sql);
-
-	
-
-
 ?>
 
 <!DOCTYPE html>
@@ -36,8 +30,8 @@
 		</nav>
 		<?php
 			while($row = $result->fetch_assoc()) {
-		echo '<iframe src='.$row["game_link"].' width=960px height=640px></iframe>';
-	}
+				echo '<iframe src='.$row["game_link"].' width=960px height=640px></iframe>';
+			}
 		?>
 	</body>
 </html>
