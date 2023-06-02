@@ -24,18 +24,18 @@
         
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
         
-		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href="styles/style.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
         <div class="menu">
             <img src="logo.png" alt="Logo Agile Snakes" class="logo">
 		      <nav class="navigate">
                   <ul class="lista">
-                    <li class="list_item">
+                   <!-- <li class="list_item">
                         <label id="item">
                             <a href="#Gry" class="bar">Gry</a>
                         </label>
-                      </li>
+                      </li> -->
                       <li class="list_item">
                         <label id="item">
                             <a href="#Zespol" class="bar">Zespół</a>
@@ -120,7 +120,7 @@
 				</label>
 				<input type="password" name="password" placeholder="Password" id="password" required><br>
 				<input type="submit" value="Login"><br>
-				<a href="rej.php"><input type="button" value="Zarejestruj"></a>
+				<a href="stronaRejestracja.php"><input type="button" value="Zarejestruj"></a>
 			</form>
             </div>
         </div>
@@ -129,7 +129,7 @@
                 document.querySelector('.login').style.display='block';
             }
             function ukryjLogin(){
-                document.querySelector('.login').style.display='none'
+                document.querySelector('.login').style.display='none';
             }
         </script>
 	</body>

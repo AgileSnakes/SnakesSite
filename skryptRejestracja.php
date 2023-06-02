@@ -1,5 +1,5 @@
 <?php 
-	include('conn.php');
+	include('admin.php');
 	$username = $_POST["username"];
 	$password= $_POST["password"];
 	$repeatPass = $_POST["password2"];
@@ -18,7 +18,7 @@
 		}
 	}else{
 		setcookie("PasswordWarning","1");
-		header("Location:rej.php");
+		header("Location:stronaRejestracja.php");
 	}	
 
 

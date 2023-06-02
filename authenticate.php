@@ -1,6 +1,6 @@
 <?php
 
-include('conn.php');
+include('admin.php');
 $username = $_POST["username"];
 $password= $_POST["password"];
 
@@ -19,7 +19,7 @@ if ($result->num_rows > 0) {
   		//echo "Udało się zalogować";
       setcookie("User",$row["name"]);
       setcookie("Admin",$row["admin"]);
-      header("Location: glowna.php");
+      header("Location: stronaGlownaZalogowany.php");
   	}else{
   		echo "Błędne dane";
   	}

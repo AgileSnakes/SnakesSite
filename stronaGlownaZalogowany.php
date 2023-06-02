@@ -40,14 +40,14 @@
                 <ul class="lista">
                 <?php
                 if(isset($_COOKIE['Admin'])){
-				echo'
-					<li class="list_item">
+				echo
+				'<li class="list_item">
                         <label id="item">
-                            <a href="#Gry" class="bar">Lista gier</a>
+                            
                         </label>
 					<li class="list_item">
 						<label id="item">
-							<a href="addGames.php" class="bar">Dodaj grę </a>
+							<a href="stronaDodajGre.php" class="bar">Dodaj grę </a>
 						</label>
 					</li>';
 				}
@@ -69,7 +69,7 @@
 	    <div class="karuzela">
             <?php
 				 while($row = $result->fetch_assoc()) {
-				 	echo'<form action="play_game.php" method="post">';
+				 	echo'<form action="stronaZagraj.php" method="post">';
 				 	echo'<div class="card" style="width: 18rem;">';
   					echo'<img src='.$row["png_link"].' class="card-img-top" alt="...">';
  					echo'<div class="card-body">';

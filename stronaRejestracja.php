@@ -20,7 +20,7 @@
         
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
         
-		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href="styles/style.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
         <div class="menu">
@@ -43,15 +43,15 @@
 				<label for="username">
 					<i class="fas fa-user"></i>
 				</label>
-				<input type="text" name="username" placeholder="Username" id="username" required>
+				<input type="text" name="username" placeholder="Nazwa użytkownika..." id="username" required>
 				<label for="password">
 					<i class="fas fa-lock"></i>
 				</label>
-				<input type="password" name="password" placeholder="Password" id="password" required>
+				<input type="password" name="password" placeholder="Hasło..." id="password" required>
 				<label for="password">
 					<i class="fas fa-lock"></i>
 				</label>
-				<input type="password" name="password2" placeholder="Repeat password" id="password2" required>
+				<input type="password" name="password2" placeholder="Powtórz hasło..." id="password2" required>
 			
 				<input type="submit" value="Zarejestruj">
 				

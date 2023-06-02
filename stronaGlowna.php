@@ -47,7 +47,7 @@
                         </label>
 					<li class="list_item">
 						<label id="item">
-							<a href="addGames.php" class="bar">Dodaj grę </a>
+							<a href="addGames.php" class="bar">Dodaj grę</a>
 						</label>
 					</li>';
 				}
