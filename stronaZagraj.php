@@ -33,6 +33,11 @@
                     <a href="stronaGlownaZalogowany.php" class="bar">Strona główna</a>
                     </label>
                 </li>
+				<li class="list_item">
+                    <label id="item">
+                        <a href="" class="bar">Profil</a>
+                    </label>
+                </li>
                 <li class="list_item">
                     <label id="item">
 				        <a href="skryptWyloguj.php" class="bar">Wyloguj</a>

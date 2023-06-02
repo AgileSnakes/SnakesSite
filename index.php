@@ -110,7 +110,7 @@
             <div class="login-content">
                 <span class="close" onclick="ukryjLogin()">&times;</span>
 			<h2>Logowanie\<br>Rejestracja</h2>
-			<form action="authenticate.php" method="post">
+			<form action="skryptZaloguj.php" method="post">
 				<label for="username">
 					<i class="fas fa-user"></i>
 				</label>
