@@ -35,7 +35,7 @@
             <img src="logo.png" alt="Logo Agile Snakes" class="logo">
 		      <nav class="navtop">
 				<?php
-				echo'<h1>Strona główna - Cześć '.$_COOKIE["User"].'</h1>';
+				echo'<h1>Strona główna - Cześć, '.$_COOKIE["User"].'</h1>';
 				?>
                 <ul class="lista">
                 <?php
@@ -73,7 +73,7 @@
 				 	echo'<div class="card" style="width: 18rem;">';
   					echo'<img src='.$row["png_link"].' class="card-img-top" alt="...">';
  					echo'<div class="card-body">';
-   					echo'<h5 class="card-title">'.$row["game_name"].' </h5>';
+   					echo'<h5 class="card-title">'.$row["game_name"].' </h5>	';
    					echo'<input type="hidden" name="gamename" value="'.$row["game_name"].'">';
   					echo'<p class="card-text"></p>';
   					echo'<input type="submit" class="btn btn-primary" value="Zagraj">';

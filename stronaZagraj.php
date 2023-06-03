@@ -50,7 +50,7 @@
         <div class="karuzela">
 		<?php
 			while($row = $result->fetch_assoc()) {
-		echo '<iframe src='.$row["game_link"].' width=960px height=640px></iframe>';
+		echo '<iframe src='.$row["game_link"].'/index.php width=960px height=640px></iframe>';
 	}
 		?>
         </div>

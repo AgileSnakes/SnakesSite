@@ -36,6 +36,7 @@ ul.lista{
     max-width: none;
     display: block flex;
     padding: 10px;
+    line-height: 55px;
     background-color: forestgreen;
     color: lime;
     text-decoration: none;
@@ -141,7 +142,7 @@ h2{
     vertical-align: middle;
     padding: 15px;
     width: 50%;
-    line-height: inherit;
+    line-height: 95px;
 }
 .log{
     display: inline;
@@ -176,6 +177,17 @@ h2{
 
 form{
 	float: left;
+}
+
+.karuzela{
+	margin: 0 auto;
+	width: 100%;
+}
+
+
+.formDodajGre{
+width: 200px;
+margin: 0 auto;
 }
 
 .card-img-top {
