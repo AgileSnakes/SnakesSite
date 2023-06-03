@@ -3,8 +3,9 @@
 	$gameName = $_POST['gamename'];
 	include('admin.php');
 
-	$sql = "SELECT  game_name, game_link FROM Games WHERE game_name = '".$gameName."'";
+	$sql = "SELECT  game_name FROM games2 WHERE game_name = '".$gameName."'";
 	$result = $conn->query($sql);
+
 ?>
 
 <!DOCTYPE html>
@@ -50,8 +51,9 @@
         <div class="karuzela">
 		<?php
 			while($row = $result->fetch_assoc()) {
-		echo '<iframe src='.$row["game_link"].'/index.php width=960px height=640px></iframe>';
+			echo '<iframe src=Gry/'.$row["game_name"].'/index.html width=960px height=640px></iframe>';
 	}
+
 		?>
         </div>
         <div class="right-baner"></div>

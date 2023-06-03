@@ -4,7 +4,7 @@
 		header("Location: index.php");
 	}
 		include('admin.php');
-		$sql = "SELECT game_name, game_link, png_link FROM Games";
+		$sql = "SELECT game_name FROM games2";
 		$result = $conn->query($sql);
 
 	if(isset($_COOKIE['AddGame']))
@@ -71,7 +71,7 @@
 				 while($row = $result->fetch_assoc()) {
 				 	echo'<form action="stronaZagraj.php" method="post">';
 				 	echo'<div class="card" style="width: 18rem;">';
-  					echo'<img src='.$row["png_link"].' class="card-img-top" alt="...">';
+  					echo'<img src=Gry/'.$row["game_name"].'/'.$row["game_name"].'.png class="card-img-top" alt="...">';
  					echo'<div class="card-body">';
    					echo'<h5 class="card-title">'.$row["game_name"].' </h5>	';
    					echo'<input type="hidden" name="gamename" value="'.$row["game_name"].'">';

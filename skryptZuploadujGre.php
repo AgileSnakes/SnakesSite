@@ -1,5 +1,5 @@
 <?php
-
+include('admin.php');
 header('Content-Type: text/plain; charset=utf-8');
 
 try {
@@ -63,9 +63,10 @@ try {
     echo $e->getMessage();
 }
 
-//$filename = pathinfo($_FILES['upfile']['name'], PATHINFO_FILENAME);
+$filename = pathinfo($_FILES['upfile']['name'], PATHINFO_FILENAME);
 //mkdir('./Gry/'.$filename.'', 0700);
 
+// rozpakowanie archiwum z gr¹
 $file = './Gry/'.$nazwa.'';
 $path = pathinfo(realpath($file), PATHINFO_DIRNAME);
 
@@ -76,6 +77,16 @@ if ($res === TRUE) {
   $zip->close();
 } 
 
+
+    $sql = "INSERT INTO games2 (game_name, png_link) VALUES ('$filename', '')";
+
+    if($conn->query($sql) == TRUE)
+    {
+    		setcookie("AddGame","1");
+			header("Location:stronaGlownaZalogowany.php");
+    }else{
+			echo "Error:" . $sql . "<br>" . $conn-> error;
+		}
 
 header( "location: stronaGlownaZalogowany.php", true, 301 );
 
