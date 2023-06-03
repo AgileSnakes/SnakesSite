@@ -186,6 +186,7 @@ form{
 .formDodajGre{
 width: 200px;
 margin: 0 auto;
+float: none;
 }
 
 .card-img-top {

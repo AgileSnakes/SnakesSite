@@ -36,20 +36,17 @@
         </div>
         <div class="left-baner"></div>
         <div class="karuzela">
-			<form action="skryptDodajGre.php" class="formDodajGre" method="post">
+			<!--<form action="skryptDodajGre.php" class="formDodajGre" method="post">
 				<input type="text" name="gamelink" placeholder="(Gry/{NazwaGry}/index.php]" id="gamelink" required><br>
 				<input type="text" name="pnglink" placeholder="(Gry/Img/{NazwaGry}" id="pnglink" required><br>
 				<input type="text" name="addGameName" placeholder="Nazwa gry" id="addGameName" required><br>
 				<input type="submit" value="Dodaj">	
-
-
-			</form>
-
-            <form enctype="multipart/form-data" method="post" action="skryptZuploadujGre.php">
-<label>Choose a zip file to upload: <input type="file" name="upfile" /></label>
-<br />
-<input type="submit" name="submit" value="Upload" />
-</form>
+			</form> --><br>
+                <form enctype="multipart/form-data" class="formDodajGre" method="post" action="skryptZuploadujGre.php">
+                    <label>Wybierz plik .zip gry:  <input type="file" name="upfile" /></label>
+                <br />
+                <input type="submit" name="submit" value="Wyślij" />
+                </form>
         </div>
         <div class="right-baner"></div>
 	</body>

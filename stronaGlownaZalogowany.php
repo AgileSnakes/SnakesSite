@@ -70,7 +70,7 @@
             <?php
 				 while($row = $result->fetch_assoc()) {
 				 	echo'<form action="stronaZagraj.php" method="post">';
-				 	echo'<div class="card" style="width: 18rem;">';
+				 	echo'<div class="card" style="width: 18.8rem;">';
   					echo'<img src=Gry/'.$row["game_name"].'/'.$row["game_name"].'.png class="card-img-top" alt="...">';
  					echo'<div class="card-body">';
    					echo'<h5 class="card-title">'.$row["game_name"].' </h5>	';
