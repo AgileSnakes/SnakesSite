@@ -39,7 +39,7 @@
         <div class="left-baner"></div>
 		<div class="karuzela"><br>
 			<h1 class="log">Login</h1>
-			<form action="register.php" method="post">
+			<form action="skryptRejestracja.php" method="post">
 				<label for="username">
 					<i class="fas fa-user"></i>
 				</label>
