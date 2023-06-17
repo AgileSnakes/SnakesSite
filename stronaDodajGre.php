@@ -34,7 +34,8 @@
                   </ul>
 		      </nav>
         </div>
-        <div class="left-baner"></div>
+        <div class="left-baner">
+    <img src="images/gifsnake.gif" alt="reklama1" class="reklama" style="width:100%; height:100%; align-items: center;"></div>
         <div class="karuzela">
 			<!--<form action="skryptDodajGre.php" class="formDodajGre" method="post">
 				<input type="text" name="gamelink" placeholder="(Gry/{NazwaGry}/index.php]" id="gamelink" required><br>
@@ -48,6 +49,7 @@
                 <input type="submit" name="submit" value="Wyślij" />
                 </form>
         </div>
-        <div class="right-baner"></div>
+        <div class="right-baner">
+    <img src="images/gifsnake.gif" alt="reklama1" class="reklama" style="width:100%; height:100%; align-items: center;"></div>
 	</body>
 </html>

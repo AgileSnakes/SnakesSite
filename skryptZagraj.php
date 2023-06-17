@@ -41,7 +41,9 @@
                 </ul>
 		      </nav>
         </div>
-        <div class="left-baner"></div>
+        <div class="left-baner">
+        <img src="images/gifsnake.gif" alt="reklama1" class="reklama" style="width:100%; height:100%; align-items: center;">
+        </div>
         <div class="karuzela">
 		<?php
 			while($row = $result->fetch_assoc()) {
@@ -49,6 +51,8 @@
 	}
 		?>
         </div>
-        <div class="right-baner"></div>
+        <div class="right-baner">
+        <img src="images/gifsnake.gif" alt="reklama1" class="reklama" style="width:100%; height:100%; align-items: center;">
+        </div>
 	</body>
 </html>

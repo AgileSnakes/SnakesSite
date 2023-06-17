@@ -51,7 +51,7 @@
             </nav>
 		</div>
         <div class="left-baner">
-            <!img src="reklama1.png" alt="reklama1" class="reklama">
+            <img src="images/gifsnake.gif" alt="reklama1" class="reklama" style="width:100%; height:100%; align-items: center;">
         </div>
         
         <div class="karuzela">
@@ -61,12 +61,13 @@
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
                 </ol>
 
         <div class="carousel-inner">
 
             <div class="item active">
-                <img src="logo.png" alt="AgileSnakes" style="width:100%;">
+                <img src="images/Snake.jpeg" alt="AgileSnakes" style="width:100%;">
                 <div class="carousel-caption">
                     <h3>AgileSnakes</h3>
                     <p>Poznaj naszą załogę!</p>
@@ -74,7 +75,7 @@
         </div>
 
       <div class="item">
-        <img src="logo.png" alt="Gry" style="width:100%;">
+        <img src="images/game.jpeg" alt="Gry" style="width:100%;">
         <div class="carousel-caption">
           <h3>Gry</h3>
           <p>Dołącz do walki o ranking w naszych grach</p>
@@ -82,10 +83,18 @@
       </div>
     
       <div class="item">
-        <img src="logo.png" alt="Kontakt" style="width:100%;">
+        <img src="images/kontakt.jpeg" alt="Kontakt" style="width:100%;">
         <div class="carousel-caption">
           <h3>Kontakt</h3>
           <p>Współpraca: 28339@s.pm.szczecin.pl</p>
+        </div>
+      </div>
+            
+    <div class="item">
+        <img src="images/wspolpraca.jpeg" alt="Wpółpraca" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Współpraca</h3>
+          <p>Współpraca możliwa po uprzednim kontakcie</p>
         </div>
       </div>
   
@@ -103,7 +112,7 @@
             
         </div>
         <div class="right-baner">
-            <!img src="reklama2.png" alt="reklama2">        
+            <img src="images/gifsnake.gif" alt="reklama2" style="width:100%; height:100%; align-items: center;">        
         </div>
         
         <div class="login">

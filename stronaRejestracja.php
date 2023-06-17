@@ -36,7 +36,9 @@
                 </ul>
             </nav>
         </div>
-        <div class="left-baner"></div>
+        <div class="left-baner">
+        <img src="images/gifsnake.gif" alt="reklama1" class="reklama" style="width:100%; height:100%; align-items: center;">
+        </div>
 		<div class="karuzela"><br>
 			<h1 class="log">Login</h1>
 			<form action="skryptRejestracja.php" method="post">
@@ -58,6 +60,7 @@
 				
 			</form>
 		</div>
-        <div class="right-benr"></div>
+        <div class="right-baner">
+        <img src="images/gifsnake.gif" alt="reklama1" class="reklama" style="width:100%; height:100%; align-items: center;"></div>
 	</body>
 </html>
